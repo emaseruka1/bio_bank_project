@@ -58,7 +58,7 @@ Follow these steps to install the project:
 
 2. Go to your localhost with the following url. (I advise that you use Google Chrome):
 
-    http://localhost:5000
+    http://localhost:5555
 
 3. Login as Admin with these details:
 
