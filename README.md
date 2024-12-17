@@ -2,9 +2,9 @@
 
 The BioBank web-based application allows researchers to keep track of a Bio data inventory. 
 
-This web app is also powered by a Generative A.I 3.5 Turbo GPT model in the backend, I have named "God's Eye". "God's Eye" continuously monitors, logs, and interprets every User action within the BioBank webapp, ensuring data security, data integrity and prompt incident response measures by the Administrator.
+This web app is also powered by a Generative A.I 3.5 Turbo GPT model in the backend, I have named "God's Eye". "God's Eye" continuously monitors, logs, and interprets every User action within the BioBank webapp, ensuring data security, data integrity and prompt incident response measures by the Administrator. (N.B: On cloning this project, I will provide you with necessary API keys)
 
-The interface can: 
+The Webapp can: 
 
 1. View Bio data collections and their associated Samples data 🗂️
 2. Add a New Collection ➕
