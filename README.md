@@ -17,8 +17,8 @@ The interface can:
 ## Table of Contents
 1. [Database Schema](#database-schema)
 2. [OOP Class Diagram](#oop-class-diagram)
-3. [Installation](#installation)
-4. [Usage](#usage)
+3. [Installation](#installation 📥)
+4. [Usage](#usage 💻)
 
 
 ## Database Schema
