@@ -218,7 +218,7 @@ class admin_user(User):
 def download_gods_eye_report(log_table_data):
     csv_output = StringIO()
     csv_writer = csv.writer(csv_output)
-    csv_writer.writerow(['timestamp', 'user_id', 'command', 'gods_eye_description']) # Write the header
+    csv_writer.writerow(['','timestamp', 'user_id', 'command', 'gods_eye_description']) # Write the header
     csv_writer.writerows(log_table_data) #write data
     csv_output.seek(0)
     return csv_output.getvalue()
