@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+
+
+<h2>Welcome, {{ message }}!</h2>
+<h2 style="text-align: center;">Collections Inventory</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Disease Term</th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for collection in collections %}
+        <tr style="transition: background-color 0.3s;">
+            <td>{{ collection[0] }}</td> <!-- ID -->
+            <td>{{ collection[1] }}</td> <!-- Disease Term -->
+            <td>{{ collection[2] }}</td> <!-- Title -->
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+<!-- Add New Collection Form -->
+<form action="#" method="POST" class="center-form">
+    <input type="hidden" name="form_action" value="add_collection">
+    <label for="Disease_Term">Disease Term:</label>
+    <input type="text" id="Disease_Term" name="Disease_Term" placeholder="Enter Disease Term" required>
+
+    <label for="title">Title:</label>
+    <input type="text" id="title" name="title" placeholder="Enter Title" required>
+
+    <button type="submit" class="btn btn-green">Add New Collection</button>
+</form>
+<h2 style="text-align: center;">Samples Inventory</h2>
+{% if samples %}
+    <table border="1" style="width: 80%; margin: 20px auto; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Collection ID</th>
+                <th>Donor Count</th>
+                <th>Material Type</th>
+                <th>Last Updated</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for sample in samples %}
+            <tr>
+                <td>{{ sample[0] }}</td> 
+                <td>{{ sample[1] }}</td> 
+                <td>{{ sample[2] }}</td> 
+                <td>{{ sample[3] }}</td> 
+                <td>{{ sample[4] }}</td> 
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No Samples found!</p>
+{% endif %}
+
+<p style="text-align: center; font-weight: bold;">Make Sure Collection ID exists before adding Samples</p>
+<!-- Add New Sample Form -->
+<form action="#" method="POST" class="centerextra-form">
+    <input type="hidden" name="form_action" value="add_sample">
+    <label for="collection_id">Collection ID:</label>
+    <input type="number" id="collection_id" name="collection_id" placeholder="Enter Collection ID" required>
+
+    <label for="donor_count">Donor Count:</label>
+    <input type="number" id="donor_count" name="donor_count" placeholder="Enter Donor Count" required>
+
+    <label for="material_type">Material Type:</label>
+    <input type="text" id="material_type" name="material_type" placeholder="Enter Material Type" required>
+
+    <button type="submit" class="btn btn-green">Add New Sample</button>
+</form>
+
+<!-- Delete Sample Form -->
+<form action="#" method="POST" class="center-form">
+    <input type="hidden" name="form_action" value="delete_sample">
+    <label for="sample_id">Delete Sample ID:</label>
+    <input type="number" id="sample_id" name="sample_id" placeholder="Enter Sample ID" required>
+
+    <button type="submit" class="btn btn-red">Delete Sample</button>
+</form>
+ <body>
+
+{% endblock %}

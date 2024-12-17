@@ -1,0 +1,57 @@
+/* Search Page Layout */
+.search-wrapper {
+    display: flex;
+    height: 100vh;
+}
+
+/* Left Sidebar (Island) */
+.search-sidebar {
+    width: 20%; /* 20% width for the left island */
+    background-color: #e5eaef; /* You can change this to any color you like */
+    color:  rgb(5, 33, 104);
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%; /* Full height of the page */
+}
+
+/* Main Content */
+.search-results {
+    width: 80%; /* 80% width for the remaining content */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Form Styling */
+.search-wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.search-wrapper label {
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.search-wrapper input[type="text"],
+.search-wrapper input[type="date"],
+.search-wrapper input[type="number"] {
+    padding: 8px;
+    width: 100%;
+    border-radius: 10px; /* Round the edges of input fields */
+    border: 1px solid #ddd; /* Light border */
+}
+
+/* Button Styling for Search Page */
+.search-wrapper button[type="submit"] {
+    padding: 10px;
+    background-color: rgb(5, 33, 104);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; /* Round the edges of the button */
+}
+
+.search-wrapper button[type="submit"]:hover {
+    background-color: rgb(3, 21, 67); /* Darker shade on hover */
+}

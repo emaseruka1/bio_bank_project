@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %} Default Value {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/buttons_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search_page_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_bar_style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/table_style.css') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="{{ url_for('static', filename='images/uon_logo.png') }}" alt="University of Nottingham Logo">
+        </div>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="{{ url_for('home_page') }}">Home</a></li>
+                <li><a href="{{ url_for('search') }}">Search</a></li>
+                <li><a href="{{ url_for('admin_page') }}">Admin</a></li>
+                <li><a href="{{ url_for('login_page') }}">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %} {% endblock %}
+</body>
+</html>
+

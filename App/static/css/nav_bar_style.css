@@ -1,0 +1,54 @@
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #e5eaef; /* University of Nottingham blue */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.navbar-logo img {
+    height: 70px; /* Adjust as needed */
+    
+}
+
+/* Links */
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar-links ul li {
+    display: inline-block;
+}
+
+.navbar-links ul li a {
+    text-decoration: none;
+    color: rgb(5, 33, 104);
+    font-size:20px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-links ul li a:hover {
+    color: #ffdd00; /* University of Nottingham yellow/gold */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

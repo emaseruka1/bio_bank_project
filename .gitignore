@@ -1,0 +1,22 @@
+ECHO is on.
+# Virtual environment
+.venv/
+
+# Python compiled files
+__pycache__/
+*.pyc
+
+# Database files
+*.db
+
+# Logs or data files
+*.csv
+
+# System/Editor-specific files
+.DS_Store
+Thumbs.db
+.idea/
+
+# Other temporary files (if applicable)
+*.tmp
+

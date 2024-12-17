@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Portal{% endblock %}
+
+{% block content %}
+<h2>Admin Portal</h2>
+<h2 style="text-align: center;">Registered Users</h2>
+
+{% if users %}
+    <table border="1" style="width: 80%; margin: 20px auto; border-collapse: collapse;">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Password</th>
+                <th>admin</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for users in users %}
+            <tr>
+                <td>{{ users[0] }}</td> 
+                <td>{{ users[1] }}</td> 
+                <td>{{ users[2] }}</td> 
+                <td>{{ users[3] }}</td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No users found!</p>
+{% endif %}
+
+
+<!-- Add New User Form -->
+<form action="#" method="POST" class="center-form">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter Username:" required>
+
+    <!-- Add Button -->
+    <button type="submit" name="form_action" value="add" class="btn btn-green">Add User</button>
+    
+    <!-- Remove Button -->
+    <button type="submit" name="form_action" value="remove" class="btn btn-red">Remove User</button>
+</form>
+<br>
+<br>
+<!-- Button for downloading CSV -->
+<form action="#" method="POST">
+    <button type="submit" name="download_log_csv" class="center-form" style="display: block; margin: 0 auto; padding: 10px 20px; background-color: #233c56; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease;">Download God's Eye GPT Log Report (All Users)</button>
+</form>
+
+<br>
+<br>
+
+<!-- Button for downloading CSV -->
+<form action="#" method="POST">
+    <button type="submit" name="download_log_csv_admin" class="center-form" style="display: block; margin: 0 auto; padding: 10px 20px; background-color: #233c56; color: white; border: none; border-radius: 1px; cursor: pointer; font-size: 16px; transition: background-color 0.3s ease;">Download God's Eye GPT Log Report (Admin Only)</button>
+</form>
+{% endblock %}

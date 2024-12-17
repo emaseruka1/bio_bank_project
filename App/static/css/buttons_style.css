@@ -1,0 +1,56 @@
+/* Base button style */
+.btn {
+    padding: 8px 15px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Specific style for green buttons */
+.btn-green {
+    background-color: #076e1f; /* Default green */
+}
+
+.btn-green:hover {
+    background-color: #012308; /* Darker green on hover */
+}
+
+/* Specific style for red buttons */
+.btn-red {
+    background-color: #f92008; /* Default red */
+}
+
+.btn-red:hover {
+    background-color: #c0392b; /* Slightly darker red on hover */
+}
+
+/* Center the form on the page horizontally */
+.center-form {
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 auto; /* Horizontally center the form */
+    display: flex; /* Make the form use flexbox */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Space out form elements */
+    align-items: center; /* Vertically align form elements */
+    padding: 20px;
+}
+
+/* Make labels and inputs align horizontally */
+.center-form label,
+.center-form input {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Another form style for extra layout customization */
+.centerextra-form {
+    width: 70%; /* Adjust the width as needed */
+    margin: 0 auto; /* Horizontally center the form */
+    display: flex; /* Make the form use flexbox */
+    flex-direction: row; /* Arrange items horizontally */
+    justify-content: space-between; /* Space out form elements */
+    align-items: center; /* Vertically align form elements */
+    padding: 20px;
+}
