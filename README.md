@@ -1,8 +1,8 @@
 # BioBank Project
 
-The BioBank web-based application that allows researchers to keep track of Bio data inventories. 
+The BioBank web-based application allows researchers to keep track of a Bio data inventory. 
 
-This web app is also powered by a Generative A.I 3.5 Turbo GPT in the backend, I have named "God's Eye". "God's Eye" continuously monitors, logs, and interprets every User action within the BioBank webapp, ensuring data security, data integrity and prompt incident response measures.
+This web app is also powered by a Generative A.I 3.5 Turbo GPT model in the backend, I have named "God's Eye". "God's Eye" continuously monitors, logs, and interprets every User action within the BioBank webapp, ensuring data security, data integrity and prompt incident response measures by the Administrator.
 
 The interface can: 
 
