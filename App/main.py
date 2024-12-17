@@ -45,7 +45,7 @@ def login_page():
         if passed_verification:       
             return redirect(url_for('home_page')) # Go to the home page after login verified 
         else:
-            flash("Invalid login details. Please try again or Contact Admin.")
+            flash("Invalid login details. Please try again or Contact Admin.") # Flash message and go to login page after login failure
 
 
     return render_template(template_name_or_list='login_page.html')

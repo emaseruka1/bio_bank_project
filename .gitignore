@@ -6,8 +6,6 @@ ECHO is on.
 __pycache__/
 *.pyc
 
-# Database files
-*.db
 
 # Logs or data files
 *.csv

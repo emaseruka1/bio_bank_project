@@ -6,17 +6,17 @@
 
 /* Left Sidebar (Island) */
 .search-sidebar {
-    width: 20%; /* 20% width for the left island */
-    background-color: #e5eaef; /* You can change this to any color you like */
+    width: 20%; 
+    background-color: #e5eaef; 
     color:  rgb(5, 33, 104);
     padding: 20px;
     box-sizing: border-box;
-    height: 100%; /* Full height of the page */
+    height: 100%; 
 }
 
 /* Main Content */
 .search-results {
-    width: 80%; /* 80% width for the remaining content */
+    width: 80%; 
     padding: 20px;
     box-sizing: border-box;
 }
@@ -38,8 +38,8 @@
 .search-wrapper input[type="number"] {
     padding: 8px;
     width: 100%;
-    border-radius: 10px; /* Round the edges of input fields */
-    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px; 
+    border: 1px solid #ddd; 
 }
 
 /* Button Styling for Search Page */
@@ -49,9 +49,9 @@
     color: white;
     border: none;
     cursor: pointer;
-    border-radius: 10px; /* Round the edges of the button */
+    border-radius: 10px; 
 }
 
 .search-wrapper button[type="submit"]:hover {
-    background-color: rgb(3, 21, 67); /* Darker shade on hover */
+    background-color: rgb(3, 21, 67); 
 }

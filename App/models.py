@@ -17,16 +17,16 @@ class User(Sql_database):
         self.today_date = datetime.today().strftime("%Y-%m-%d")
     
 
-    def user_id_getter(self):
+    def user_id_getter(self): #method to get private user id feature
         return self.__user_id
     
-    def user_password_getter(self):
+    def user_password_getter(self): #method to get private password feature
         return self.__password
     
-    def user_password_setter(self,new_password):
+    def user_password_setter(self,new_password): #method to set new password
         self.__password = new_password
 
-    def action_db(self):
+    def action_db(self): #abstract method to connect to db
         return self.connect_db()
     
     def view_collections(self):
@@ -137,7 +137,7 @@ class User(Sql_database):
         #send result to flask app/HTML webpage 
 
 
-    def log_update(self,sql_query,username):
+    def log_update(self,sql_query,username): #God's Eye method
 
         openai.api_key ="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"
 

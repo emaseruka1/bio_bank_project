@@ -3,17 +3,17 @@ table {
     width: 80%; 
     margin: 20px auto;
     border-collapse: collapse;
-    background-color: #e5eaef; /* Light gray background */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #e5eaef;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     cursor: pointer; 
-    color: rgb(5, 33, 104); /* Text color */
-    border: 5px solid #ccc; /* Border style equivalent to border="5" */
+    color: rgb(5, 33, 104); 
+    border: 5px solid #ccc; 
 }
 
 /* Table Header Style */
 th {
-    background-color: #233c56; /* Blue background for header */
-    color: white; /* White text */
+    background-color: #233c56; 
+    color: white; 
     padding: 10px; 
     text-align: left; 
 }

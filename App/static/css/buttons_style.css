@@ -17,7 +17,7 @@
     background-color: #012308; /* Darker green on hover */
 }
 
-/* Specific style for red buttons */
+/* Style for red buttons */
 .btn-red {
     background-color: #f92008; /* Default red */
 }
@@ -28,12 +28,12 @@
 
 /* Center the form on the page horizontally */
 .center-form {
-    width: 50%; /* Adjust the width as needed */
-    margin: 0 auto; /* Horizontally center the form */
-    display: flex; /* Make the form use flexbox */
-    flex-direction: row; /* Arrange items horizontally */
-    justify-content: space-between; /* Space out form elements */
-    align-items: center; /* Vertically align form elements */
+    width: 50%; 
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center;
     padding: 20px;
 }
 
@@ -46,11 +46,11 @@
 
 /* Another form style for extra layout customization */
 .centerextra-form {
-    width: 70%; /* Adjust the width as needed */
-    margin: 0 auto; /* Horizontally center the form */
-    display: flex; /* Make the form use flexbox */
-    flex-direction: row; /* Arrange items horizontally */
-    justify-content: space-between; /* Space out form elements */
-    align-items: center; /* Vertically align form elements */
+    width: 70%; 
+    margin: 0 auto; 
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
     padding: 20px;
 }
