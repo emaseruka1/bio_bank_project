@@ -151,8 +151,8 @@ class User(Sql_database):
         description = response['choices'][0]['message']['content']
         timestamp=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         sql_obj = self.action_db()
-        sql_obj.cursor.execute('''INSERT INTO logs_table (user_id,timestamp,command,gods_eye_description)
-                                VALUES (?,?,?,?)''',(self.user_id_getter(),timestamp,sql_query,description))
+        sql_obj.cursor.execute('''INSERT INTO logs_table (timestamp,user_id,command,gods_eye_description)
+                                VALUES (?,?,?,?)''',(timestamp,self.user_id_getter(),sql_query,description))
         sql_obj.conn.commit()
         print(description)
         
