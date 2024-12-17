@@ -17,8 +17,8 @@ The interface can:
 ## Table of Contents
 1. [Database Schema](#database-schema)
 2. [OOP Class Diagram](#oop-class-diagram)
-3. [Installation](#installation 📥)
-4. [Usage](#usage 💻)
+3. [Installation](#installation)
+4. [Usage](#usage)
 
 
 ## Database Schema
@@ -34,7 +34,7 @@ This project adheres to modern Object-Oriented Programming principles. For a det
 ![OOP Class Diagram](/OOP_Class_Diagram.png)
 
 
-## Installation 📥
+## Installation
 
 Follow these steps to install the project:
 
@@ -48,7 +48,7 @@ Follow these steps to install the project:
    ```bash
    pip install -r requirements.txt
 
-## Usage 💻
+## Usage
 
 1.  Start the app by running:
 
