@@ -62,5 +62,7 @@ Follow these steps to install the project:
 
 3. Login as Admin with these details:
     🆔 ID: 1
+   
     👤 Username: Admin
+   
     🔑 Password: Admin1
