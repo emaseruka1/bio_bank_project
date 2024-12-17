@@ -139,7 +139,7 @@ class User(Sql_database):
 
     def log_update(self,sql_query,username): #God's Eye method
 
-        openai.api_key ="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"
+        openai.api_key ="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"
 
         messages = [
         {"role": "system", "content": "You are a log auditor. Describe SQL queries in past tense, briefly, and in an audit log style. Mention username.Don't include dates"},
