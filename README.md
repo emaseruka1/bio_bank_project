@@ -31,7 +31,7 @@ I added a few more tables to the Database. Below is the **BioBank Database Schem
 
 This project adheres to modern Object-Oriented Programming principles. For a detailed overview, refer to the  **Object-Oriented Programming Class Diagram**:
 
-![OOP Class Diagram](/OOP Class Diagram.png)
+![OOP Class Diagram](/OOP_Class_Diagram.png)
 
 
 ## Installation 📥
